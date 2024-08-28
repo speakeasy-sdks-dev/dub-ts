@@ -236,7 +236,8 @@ async function run() {
     }
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
@@ -268,7 +269,8 @@ async function run() {
     const result = await dub.links.list();
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
@@ -293,7 +295,8 @@ async function run() {
     const result = await dub.links.list();
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
@@ -374,7 +377,8 @@ async function run() {
     const result = await dub.links.list();
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
@@ -411,7 +415,8 @@ async function run() {
     });
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
@@ -441,7 +446,8 @@ async function run() {
     const result = await dub.links.list();
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
@@ -473,7 +479,8 @@ async function run() {
     const result = await dub.links.list();
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
