@@ -4,7 +4,7 @@ management:
   docChecksum: a8165462b93c33c03cc5540b2f764d0b
   docVersion: 0.0.1
   speakeasyVersion: internal
-  generationVersion: 2.404.11
+  generationVersion: 2.404.10
   releaseVersion: 0.36.2
   configChecksum: 86679e2ae8440cbbdab511e2ad23d6c7
   repoURL: https://github.com/dubinc/dub-ts.git
@@ -161,6 +161,8 @@ generatedFiles:
   - src/models/components/countrycode.ts
   - src/models/components/continentcode.ts
   - src/models/components/clickevents.ts
+  - src/models/components/leadevents.ts
+  - src/models/components/saleevents.ts
   - src/models/components/workspaceschema.ts
   - src/models/components/domainschema.ts
   - src/models/components/security.ts
@@ -220,6 +222,7 @@ generatedFiles:
   - docs/models/operations/order.md
   - docs/models/operations/sortby.md
   - docs/models/operations/listeventsrequest.md
+  - docs/models/operations/listeventsresponsebody.md
   - docs/models/operations/getworkspacerequest.md
   - docs/models/operations/updateworkspacerequestbody.md
   - docs/models/operations/updateworkspacerequest.md
@@ -288,6 +291,8 @@ generatedFiles:
   - docs/models/components/countrycode.md
   - docs/models/components/continentcode.md
   - docs/models/components/clickevents.md
+  - docs/models/components/leadevents.md
+  - docs/models/components/saleevents.md
   - docs/models/components/plan.md
   - docs/models/components/role.md
   - docs/models/components/users.md
