@@ -11,8 +11,33 @@
 
 Learn more about the Dub.co TypeScript SDK in the [official documentation](https://dub.co/docs/sdks/typescript/overview).
 
+<!-- Start Summary [summary] -->
+## Summary
+
+Dub.co API: Dub is link management infrastructure for companies to create marketing campaigns, link sharing features, and referral programs.
+<!-- End Summary [summary] -->
+
+<!-- Start Table of Contents [toc] -->
+## Table of Contents
+
+* [SDK Installation](#sdk-installation)
+* [Requirements](#requirements)
+* [SDK Example Usage](#sdk-example-usage)
+* [Available Resources and Operations](#available-resources-and-operations)
+* [Standalone functions](#standalone-functions)
+* [Pagination](#pagination)
+* [Retries](#retries)
+* [Error Handling](#error-handling)
+* [Server Selection](#server-selection)
+* [Custom HTTP Client](#custom-http-client)
+* [Authentication](#authentication)
+* [Debugging](#debugging)
+<!-- End Table of Contents [toc] -->
+
 <!-- Start SDK Installation [installation] -->
 ## SDK Installation
+
+The SDK can be installed with either [npm](https://www.npmjs.com/), [pnpm](https://pnpm.io/), [bun](https://bun.sh/) or [yarn](https://classic.yarnpkg.com/en/) package managers.
 
 ### NPM
 
@@ -174,7 +199,18 @@ Validation errors can also occur when either method arguments or data returned f
 
 ```typescript
 import { Dub } from "dub";
-import { SDKValidationError } from "dub/models/errors";
+import {
+    BadRequest,
+    Conflict,
+    Forbidden,
+    InternalServerError,
+    InviteExpired,
+    NotFound,
+    RateLimitExceeded,
+    SDKValidationError,
+    Unauthorized,
+    UnprocessableEntity,
+} from "dub/models/errors";
 
 const dub = new Dub({
     token: "DUB_API_KEY",
@@ -184,6 +220,11 @@ async function run() {
     let result;
     try {
         result = await dub.links.list();
+
+        for await (const page of result) {
+            // Handle the page
+            console.log(page);
+        }
     } catch (err) {
         switch (true) {
             case err instanceof SDKValidationError: {
@@ -193,50 +234,55 @@ async function run() {
                 console.error(err.rawValue);
                 return;
             }
-            case err instanceof errors.BadRequest: {
-                console.error(err); // handle exception
+            case err instanceof BadRequest: {
+                // Handle err.data$: BadRequestData
+                console.error(err);
                 return;
             }
-            case err instanceof errors.Unauthorized: {
-                console.error(err); // handle exception
+            case err instanceof Unauthorized: {
+                // Handle err.data$: UnauthorizedData
+                console.error(err);
                 return;
             }
-            case err instanceof errors.Forbidden: {
-                console.error(err); // handle exception
+            case err instanceof Forbidden: {
+                // Handle err.data$: ForbiddenData
+                console.error(err);
                 return;
             }
-            case err instanceof errors.NotFound: {
-                console.error(err); // handle exception
+            case err instanceof NotFound: {
+                // Handle err.data$: NotFoundData
+                console.error(err);
                 return;
             }
-            case err instanceof errors.Conflict: {
-                console.error(err); // handle exception
+            case err instanceof Conflict: {
+                // Handle err.data$: ConflictData
+                console.error(err);
                 return;
             }
-            case err instanceof errors.InviteExpired: {
-                console.error(err); // handle exception
+            case err instanceof InviteExpired: {
+                // Handle err.data$: InviteExpiredData
+                console.error(err);
                 return;
             }
-            case err instanceof errors.UnprocessableEntity: {
-                console.error(err); // handle exception
+            case err instanceof UnprocessableEntity: {
+                // Handle err.data$: UnprocessableEntityData
+                console.error(err);
                 return;
             }
-            case err instanceof errors.RateLimitExceeded: {
-                console.error(err); // handle exception
+            case err instanceof RateLimitExceeded: {
+                // Handle err.data$: RateLimitExceededData
+                console.error(err);
                 return;
             }
-            case err instanceof errors.InternalServerError: {
-                console.error(err); // handle exception
+            case err instanceof InternalServerError: {
+                // Handle err.data$: InternalServerErrorData
+                console.error(err);
                 return;
             }
             default: {
                 throw err;
             }
         }
-    }
-
-    for await (const page of result) {
-        // handle page
     }
 }
 
@@ -268,7 +314,8 @@ async function run() {
     const result = await dub.links.list();
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
@@ -293,7 +340,8 @@ async function run() {
     const result = await dub.links.list();
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
@@ -374,7 +422,8 @@ async function run() {
     const result = await dub.links.list();
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
@@ -411,7 +460,8 @@ async function run() {
     });
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
@@ -441,7 +491,8 @@ async function run() {
     const result = await dub.links.list();
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
@@ -473,7 +524,8 @@ async function run() {
     const result = await dub.links.list();
 
     for await (const page of result) {
-        // handle page
+        // Handle the page
+        console.log(page);
     }
 }
 
