@@ -90,4 +90,4 @@ run();
 | errors.UnprocessableEntity | 422                        | application/json           |
 | errors.RateLimitExceeded   | 429                        | application/json           |
 | errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4xx-5xx                    | */*                        |
+| errors.SDKError            | 4xx-5xx                    | \*/\*                      |

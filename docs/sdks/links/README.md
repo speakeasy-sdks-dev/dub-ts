@@ -98,8 +98,7 @@ run();
 | errors.UnprocessableEntity | 422                        | application/json           |
 | errors.RateLimitExceeded   | 429                        | application/json           |
 | errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4xx-5xx                    | */*                        |
-
+| errors.SDKError            | 4xx-5xx                    | \*/\*                      |
 
 ## create
 
@@ -180,8 +179,7 @@ run();
 | errors.UnprocessableEntity | 422                        | application/json           |
 | errors.RateLimitExceeded   | 429                        | application/json           |
 | errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4xx-5xx                    | */*                        |
-
+| errors.SDKError            | 4xx-5xx                    | \*/\*                      |
 
 ## count
 
@@ -262,8 +260,7 @@ run();
 | errors.UnprocessableEntity | 422                        | application/json           |
 | errors.RateLimitExceeded   | 429                        | application/json           |
 | errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4xx-5xx                    | */*                        |
-
+| errors.SDKError            | 4xx-5xx                    | \*/\*                      |
 
 ## get
 
@@ -344,8 +341,7 @@ run();
 | errors.UnprocessableEntity | 422                        | application/json           |
 | errors.RateLimitExceeded   | 429                        | application/json           |
 | errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4xx-5xx                    | */*                        |
-
+| errors.SDKError            | 4xx-5xx                    | \*/\*                      |
 
 ## delete
 
@@ -426,8 +422,7 @@ run();
 | errors.UnprocessableEntity | 422                        | application/json           |
 | errors.RateLimitExceeded   | 429                        | application/json           |
 | errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4xx-5xx                    | */*                        |
-
+| errors.SDKError            | 4xx-5xx                    | \*/\*                      |
 
 ## update
 
@@ -509,8 +504,7 @@ run();
 | errors.UnprocessableEntity | 422                        | application/json           |
 | errors.RateLimitExceeded   | 429                        | application/json           |
 | errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4xx-5xx                    | */*                        |
-
+| errors.SDKError            | 4xx-5xx                    | \*/\*                      |
 
 ## createMany
 
@@ -591,8 +585,7 @@ run();
 | errors.UnprocessableEntity | 422                        | application/json           |
 | errors.RateLimitExceeded   | 429                        | application/json           |
 | errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4xx-5xx                    | */*                        |
-
+| errors.SDKError            | 4xx-5xx                    | \*/\*                      |
 
 ## updateMany
 
@@ -673,8 +666,7 @@ run();
 | errors.UnprocessableEntity | 422                        | application/json           |
 | errors.RateLimitExceeded   | 429                        | application/json           |
 | errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4xx-5xx                    | */*                        |
-
+| errors.SDKError            | 4xx-5xx                    | \*/\*                      |
 
 ## upsert
 
@@ -755,4 +747,4 @@ run();
 | errors.UnprocessableEntity | 422                        | application/json           |
 | errors.RateLimitExceeded   | 429                        | application/json           |
 | errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4xx-5xx                    | */*                        |
+| errors.SDKError            | 4xx-5xx                    | \*/\*                      |
