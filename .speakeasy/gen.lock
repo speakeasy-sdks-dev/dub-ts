@@ -14,7 +14,7 @@ features:
   typescript:
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.11
-    core: 3.16.1
+    core: 3.16.2
     defaultEnabledRetries: 0.1.0
     deprecations: 2.81.1
     envVarSecurityUsage: 0.1.1
@@ -346,3 +346,81 @@ generatedFiles:
   - src/hooks/types.ts
   - src/hooks/index.ts
   - CONTRIBUTING.md
+examples:
+  getLinks:
+    speakeasy-default-get-links: {}
+  createLink:
+    speakeasy-default-create-link: {}
+  getLinksCount:
+    speakeasy-default-get-links-count: {}
+  getLinkInfo:
+    speakeasy-default-get-link-info: {}
+  deleteLink:
+    speakeasy-default-delete-link:
+      parameters:
+        path:
+          linkId: "<value>"
+  updateLink:
+    speakeasy-default-update-link:
+      parameters:
+        path:
+          linkId: "<value>"
+  bulkCreateLinks:
+    speakeasy-default-bulk-create-links: {}
+  bulkUpdateLinks:
+    speakeasy-default-bulk-update-links: {}
+  upsertLink:
+    speakeasy-default-upsert-link: {}
+  getQRCode:
+    speakeasy-default-get-QR-code:
+      parameters:
+        query:
+          url: "https://brief-micronutrient.org"
+  retrieveAnalytics:
+    speakeasy-default-retrieve-analytics: {}
+  listEvents:
+    speakeasy-default-list-events: {}
+  getWorkspace:
+    speakeasy-default-get-workspace:
+      parameters:
+        path:
+          idOrSlug: "<value>"
+  updateWorkspace:
+    speakeasy-default-update-workspace:
+      parameters:
+        path:
+          idOrSlug: "<value>"
+  getTags:
+    speakeasy-default-get-tags: {}
+  createTag:
+    speakeasy-default-create-tag: {}
+  updateTag:
+    speakeasy-default-update-tag:
+      parameters:
+        path:
+          id: "<id>"
+  listDomains:
+    speakeasy-default-list-domains: {}
+  createDomain:
+    speakeasy-default-create-domain: {}
+  deleteDomain:
+    speakeasy-default-delete-domain:
+      parameters:
+        path:
+          slug: "acme.com"
+  updateDomain:
+    speakeasy-default-update-domain:
+      parameters:
+        path:
+          slug: "acme.com"
+  trackLead:
+    speakeasy-default-track-lead: {}
+  trackSale:
+    speakeasy-default-track-sale: {}
+  trackCustomer:
+    speakeasy-default-track-customer: {}
+  getMetatags:
+    speakeasy-default-get-metatags:
+      parameters:
+        query:
+          url: "https://dub.co"
