@@ -9,8 +9,14 @@ import { RetrieveAnalyticsResponseBody } from "dub/models/operations";
 
 let value: RetrieveAnalyticsResponseBody = [
     {
-        os: "<value>",
-        clicks: 5684.34,
+        link: "<value>",
+        id: "<id>",
+        domain: "crazy-ophthalmologist.biz",
+        key: "<key>",
+        shortLink: "<value>",
+        url: "https://hoarse-upper.org",
+        createdAt: "<value>",
+        leads: 6818.2,
     },
 ];
 ```
