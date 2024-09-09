@@ -6,8 +6,8 @@
 import { LeadsReferers } from "dub/models/components";
 
 let value: LeadsReferers = {
-    referer: "<value>",
-    leads: 2653.89,
+  referer: "<value>",
+  leads: 7037.37,
 };
 ```
 

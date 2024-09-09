@@ -5,29 +5,33 @@
 import * as z from "zod";
 
 export type ClicksCount = {
-    /**
-     * The total number of clicks
-     */
-    clicks: number;
+  /**
+   * The total number of clicks
+   */
+  clicks: number;
 };
 
 /** @internal */
-export const ClicksCount$inboundSchema: z.ZodType<ClicksCount, z.ZodTypeDef, unknown> = z.object({
-    clicks: z.number(),
+export const ClicksCount$inboundSchema: z.ZodType<
+  ClicksCount,
+  z.ZodTypeDef,
+  unknown
+> = z.object({
+  clicks: z.number(),
 });
 
 /** @internal */
 export type ClicksCount$Outbound = {
-    clicks: number;
+  clicks: number;
 };
 
 /** @internal */
 export const ClicksCount$outboundSchema: z.ZodType<
-    ClicksCount$Outbound,
-    z.ZodTypeDef,
-    ClicksCount
+  ClicksCount$Outbound,
+  z.ZodTypeDef,
+  ClicksCount
 > = z.object({
-    clicks: z.number(),
+  clicks: z.number(),
 });
 
 /**
@@ -35,10 +39,10 @@ export const ClicksCount$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace ClicksCount$ {
-    /** @deprecated use `ClicksCount$inboundSchema` instead. */
-    export const inboundSchema = ClicksCount$inboundSchema;
-    /** @deprecated use `ClicksCount$outboundSchema` instead. */
-    export const outboundSchema = ClicksCount$outboundSchema;
-    /** @deprecated use `ClicksCount$Outbound` instead. */
-    export type Outbound = ClicksCount$Outbound;
+  /** @deprecated use `ClicksCount$inboundSchema` instead. */
+  export const inboundSchema = ClicksCount$inboundSchema;
+  /** @deprecated use `ClicksCount$outboundSchema` instead. */
+  export const outboundSchema = ClicksCount$outboundSchema;
+  /** @deprecated use `ClicksCount$Outbound` instead. */
+  export type Outbound = ClicksCount$Outbound;
 }

@@ -6,21 +6,21 @@
 import { ClickEvents } from "dub/models/components";
 
 let value: ClickEvents = {
-    timestamp: "<value>",
-    clickId: "<value>",
-    linkId: "<value>",
-    domain: "right-burn.biz",
-    key: "<key>",
-    url: "https://stupendous-handmaiden.info",
-    continent: "<value>",
-    country: "Pakistan",
-    city: "Dothan",
-    device: "<value>",
-    browser: "<value>",
-    os: "<value>",
-    referer: "<value>",
-    ip: "148.80.225.247",
-    qr: 6925.32,
+  timestamp: "<value>",
+  clickId: "<value>",
+  linkId: "<value>",
+  domain: "flamboyant-dwarf.info",
+  key: "<key>",
+  url: "https://shrill-hippodrome.org",
+  continent: "<value>",
+  country: "Burkina Faso",
+  city: "West Audreystead",
+  device: "<value>",
+  browser: "<value>",
+  os: "<value>",
+  referer: "<value>",
+  ip: "90.151.141.147",
+  qr: 336.25,
 };
 ```
 

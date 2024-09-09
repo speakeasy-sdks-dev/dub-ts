@@ -5,43 +5,47 @@
 import * as z from "zod";
 
 export type SalesTopUrls = {
-    /**
-     * The destination URL
-     */
-    url: string;
-    /**
-     * The number of sales from this URL
-     */
-    sales: number;
-    /**
-     * The total amount of sales from this URL
-     */
-    amount: number;
+  /**
+   * The destination URL
+   */
+  url: string;
+  /**
+   * The number of sales from this URL
+   */
+  sales: number;
+  /**
+   * The total amount of sales from this URL
+   */
+  amount: number;
 };
 
 /** @internal */
-export const SalesTopUrls$inboundSchema: z.ZodType<SalesTopUrls, z.ZodTypeDef, unknown> = z.object({
-    url: z.string(),
-    sales: z.number(),
-    amount: z.number(),
+export const SalesTopUrls$inboundSchema: z.ZodType<
+  SalesTopUrls,
+  z.ZodTypeDef,
+  unknown
+> = z.object({
+  url: z.string(),
+  sales: z.number(),
+  amount: z.number(),
 });
 
 /** @internal */
 export type SalesTopUrls$Outbound = {
-    url: string;
-    sales: number;
-    amount: number;
+  url: string;
+  sales: number;
+  amount: number;
 };
 
 /** @internal */
 export const SalesTopUrls$outboundSchema: z.ZodType<
-    SalesTopUrls$Outbound,
-    z.ZodTypeDef,
-    SalesTopUrls
+  SalesTopUrls$Outbound,
+  z.ZodTypeDef,
+  SalesTopUrls
 > = z.object({
-    url: z.string(),
-    sales: z.number(),
-    amount: z.number(),
+  url: z.string(),
+  sales: z.number(),
+  amount: z.number(),
 });
 
 /**
@@ -49,10 +53,10 @@ export const SalesTopUrls$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace SalesTopUrls$ {
-    /** @deprecated use `SalesTopUrls$inboundSchema` instead. */
-    export const inboundSchema = SalesTopUrls$inboundSchema;
-    /** @deprecated use `SalesTopUrls$outboundSchema` instead. */
-    export const outboundSchema = SalesTopUrls$outboundSchema;
-    /** @deprecated use `SalesTopUrls$Outbound` instead. */
-    export type Outbound = SalesTopUrls$Outbound;
+  /** @deprecated use `SalesTopUrls$inboundSchema` instead. */
+  export const inboundSchema = SalesTopUrls$inboundSchema;
+  /** @deprecated use `SalesTopUrls$outboundSchema` instead. */
+  export const outboundSchema = SalesTopUrls$outboundSchema;
+  /** @deprecated use `SalesTopUrls$Outbound` instead. */
+  export type Outbound = SalesTopUrls$Outbound;
 }

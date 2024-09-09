@@ -6,39 +6,39 @@
 import { WorkspaceSchema } from "dub/models/components";
 
 let value: WorkspaceSchema = {
-    id: "<id>",
-    name: "<value>",
-    slug: "<value>",
-    plan: "business plus",
-    stripeId: "<value>",
-    billingCycleStart: 5332.06,
-    stripeConnectId: "<value>",
-    inviteCode: "<value>",
-    usage: 9560.84,
-    usageLimit: 2305.33,
-    linksUsage: 6439.9,
-    linksLimit: 3948.69,
-    salesUsage: 4238.55,
-    salesLimit: 6188.09,
-    domainsLimit: 6063.93,
-    tagsLimit: 4748.67,
-    usersLimit: 191.93,
-    aiUsage: 4701.32,
-    aiLimit: 3015.75,
-    referralLinkId: "<value>",
-    referredSignups: 7160.75,
-    conversionEnabled: false,
-    createdAt: "<value>",
-    users: [
-        {
-            role: "member",
-        },
-    ],
-    domains: [
-        {
-            slug: "acme.com",
-        },
-    ],
+  id: "<id>",
+  name: "<value>",
+  slug: "<value>",
+  plan: "business max",
+  stripeId: "<value>",
+  billingCycleStart: 8480.09,
+  stripeConnectId: "<value>",
+  inviteCode: "<value>",
+  usage: 8649.34,
+  usageLimit: 8073.19,
+  linksUsage: 4113.97,
+  linksLimit: 5691.01,
+  salesUsage: 1399.72,
+  salesLimit: 4071.83,
+  domainsLimit: 332.22,
+  tagsLimit: 691.67,
+  usersLimit: 9825.75,
+  aiUsage: 6974.29,
+  aiLimit: 3732.91,
+  referralLinkId: "<value>",
+  referredSignups: 4535.43,
+  conversionEnabled: false,
+  createdAt: "<value>",
+  users: [
+    {
+      role: "owner",
+    },
+  ],
+  domains: [
+    {
+      slug: "acme.com",
+    },
+  ],
 };
 ```
 

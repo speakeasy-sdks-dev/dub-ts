@@ -22,7 +22,7 @@ const dub = new Dub({
 
 async function run() {
   const result = await dub.events.list();
-
+  
   // Handle the result
   console.log(result)
 }
@@ -71,7 +71,7 @@ run();
 
 ### Response
 
-**Promise\<[components.ClickEvents[]](../../models/.md)\>**
+**Promise\<[operations.ListEventsResponseBody](../../models/operations/listeventsresponsebody.md)\>**
 
 ### Errors
 

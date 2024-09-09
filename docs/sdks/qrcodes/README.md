@@ -24,7 +24,7 @@ async function run() {
   const result = await dub.qrCodes.get({
     url: "https://brief-micronutrient.org",
   });
-
+  
   // Handle the result
   console.log(result)
 }
@@ -48,7 +48,7 @@ const dub = new DubCore({
 
 async function run() {
   const res = await qrCodesGet(dub, {
-    url: "https://tremendous-inevitable.net",
+    url: "https://brief-micronutrient.org",
   });
 
   if (!res.ok) {
