@@ -5,36 +5,40 @@
 import * as z from "zod";
 
 export type LeadsTopUrls = {
-    /**
-     * The destination URL
-     */
-    url: string;
-    /**
-     * The number of leads from this URL
-     */
-    leads: number;
+  /**
+   * The destination URL
+   */
+  url: string;
+  /**
+   * The number of leads from this URL
+   */
+  leads: number;
 };
 
 /** @internal */
-export const LeadsTopUrls$inboundSchema: z.ZodType<LeadsTopUrls, z.ZodTypeDef, unknown> = z.object({
-    url: z.string(),
-    leads: z.number(),
+export const LeadsTopUrls$inboundSchema: z.ZodType<
+  LeadsTopUrls,
+  z.ZodTypeDef,
+  unknown
+> = z.object({
+  url: z.string(),
+  leads: z.number(),
 });
 
 /** @internal */
 export type LeadsTopUrls$Outbound = {
-    url: string;
-    leads: number;
+  url: string;
+  leads: number;
 };
 
 /** @internal */
 export const LeadsTopUrls$outboundSchema: z.ZodType<
-    LeadsTopUrls$Outbound,
-    z.ZodTypeDef,
-    LeadsTopUrls
+  LeadsTopUrls$Outbound,
+  z.ZodTypeDef,
+  LeadsTopUrls
 > = z.object({
-    url: z.string(),
-    leads: z.number(),
+  url: z.string(),
+  leads: z.number(),
 });
 
 /**
@@ -42,10 +46,10 @@ export const LeadsTopUrls$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace LeadsTopUrls$ {
-    /** @deprecated use `LeadsTopUrls$inboundSchema` instead. */
-    export const inboundSchema = LeadsTopUrls$inboundSchema;
-    /** @deprecated use `LeadsTopUrls$outboundSchema` instead. */
-    export const outboundSchema = LeadsTopUrls$outboundSchema;
-    /** @deprecated use `LeadsTopUrls$Outbound` instead. */
-    export type Outbound = LeadsTopUrls$Outbound;
+  /** @deprecated use `LeadsTopUrls$inboundSchema` instead. */
+  export const inboundSchema = LeadsTopUrls$inboundSchema;
+  /** @deprecated use `LeadsTopUrls$outboundSchema` instead. */
+  export const outboundSchema = LeadsTopUrls$outboundSchema;
+  /** @deprecated use `LeadsTopUrls$Outbound` instead. */
+  export type Outbound = LeadsTopUrls$Outbound;
 }

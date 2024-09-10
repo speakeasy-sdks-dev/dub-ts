@@ -8,7 +8,7 @@ The deleted link
 import { DeleteLinkResponseBody } from "dub/models/operations";
 
 let value: DeleteLinkResponseBody = {
-    id: "<id>",
+  id: "<id>",
 };
 ```
 

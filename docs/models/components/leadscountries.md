@@ -6,8 +6,8 @@
 import { LeadsCountries } from "dub/models/components";
 
 let value: LeadsCountries = {
-    country: "DE",
-    leads: 8804.76,
+  country: "MD",
+  leads: 201.07,
 };
 ```
 

@@ -8,12 +8,12 @@ A lead was tracked.
 import { TrackLeadResponseBody } from "dub/models/operations";
 
 let value: TrackLeadResponseBody = {
-    clickId: "<value>",
-    eventName: "<value>",
-    customerId: "<value>",
-    customerName: "<value>",
-    customerEmail: "<value>",
-    customerAvatar: "<value>",
+  clickId: "<value>",
+  eventName: "<value>",
+  customerId: "<value>",
+  customerName: "<value>",
+  customerEmail: "<value>",
+  customerAvatar: "<value>",
 };
 ```
 

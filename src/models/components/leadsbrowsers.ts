@@ -5,37 +5,40 @@
 import * as z from "zod";
 
 export type LeadsBrowsers = {
-    /**
-     * The name of the browser
-     */
-    browser: string;
-    /**
-     * The number of leads from this browser
-     */
-    leads: number;
+  /**
+   * The name of the browser
+   */
+  browser: string;
+  /**
+   * The number of leads from this browser
+   */
+  leads: number;
 };
 
 /** @internal */
-export const LeadsBrowsers$inboundSchema: z.ZodType<LeadsBrowsers, z.ZodTypeDef, unknown> =
-    z.object({
-        browser: z.string(),
-        leads: z.number(),
-    });
+export const LeadsBrowsers$inboundSchema: z.ZodType<
+  LeadsBrowsers,
+  z.ZodTypeDef,
+  unknown
+> = z.object({
+  browser: z.string(),
+  leads: z.number(),
+});
 
 /** @internal */
 export type LeadsBrowsers$Outbound = {
-    browser: string;
-    leads: number;
+  browser: string;
+  leads: number;
 };
 
 /** @internal */
 export const LeadsBrowsers$outboundSchema: z.ZodType<
-    LeadsBrowsers$Outbound,
-    z.ZodTypeDef,
-    LeadsBrowsers
+  LeadsBrowsers$Outbound,
+  z.ZodTypeDef,
+  LeadsBrowsers
 > = z.object({
-    browser: z.string(),
-    leads: z.number(),
+  browser: z.string(),
+  leads: z.number(),
 });
 
 /**
@@ -43,10 +46,10 @@ export const LeadsBrowsers$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace LeadsBrowsers$ {
-    /** @deprecated use `LeadsBrowsers$inboundSchema` instead. */
-    export const inboundSchema = LeadsBrowsers$inboundSchema;
-    /** @deprecated use `LeadsBrowsers$outboundSchema` instead. */
-    export const outboundSchema = LeadsBrowsers$outboundSchema;
-    /** @deprecated use `LeadsBrowsers$Outbound` instead. */
-    export type Outbound = LeadsBrowsers$Outbound;
+  /** @deprecated use `LeadsBrowsers$inboundSchema` instead. */
+  export const inboundSchema = LeadsBrowsers$inboundSchema;
+  /** @deprecated use `LeadsBrowsers$outboundSchema` instead. */
+  export const outboundSchema = LeadsBrowsers$outboundSchema;
+  /** @deprecated use `LeadsBrowsers$Outbound` instead. */
+  export type Outbound = LeadsBrowsers$Outbound;
 }
