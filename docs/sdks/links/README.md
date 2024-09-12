@@ -29,7 +29,7 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.list();
+  const result = await dub.links.list({});
   
   for await (const page of result) {
     // Handle the page
@@ -55,7 +55,7 @@ const dub = new DubCore({
 });
 
 async function run() {
-  const res = await linksList(dub);
+  const res = await linksList(dub, {});
 
   if (!res.ok) {
     throw res.error;
@@ -197,7 +197,7 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.count();
+  const result = await dub.links.count({});
   
   // Handle the result
   console.log(result)
@@ -221,7 +221,7 @@ const dub = new DubCore({
 });
 
 async function run() {
-  const res = await linksCount(dub);
+  const res = await linksCount(dub, {});
 
   if (!res.ok) {
     throw res.error;
@@ -279,7 +279,7 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.get();
+  const result = await dub.links.get({});
   
   // Handle the result
   console.log(result)
@@ -303,7 +303,7 @@ const dub = new DubCore({
 });
 
 async function run() {
-  const res = await linksGet(dub);
+  const res = await linksGet(dub, {});
 
   if (!res.ok) {
     throw res.error;

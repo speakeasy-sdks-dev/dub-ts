@@ -17,6 +17,7 @@ features:
     core: 3.17.2
     defaultEnabledRetries: 0.1.0
     deprecations: 2.81.1
+    enumUnions: 0.1.0
     envVarSecurityUsage: 0.1.1
     errors: 2.82.2
     examples: 2.81.4
