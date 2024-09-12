@@ -6,9 +6,9 @@
 import { SalesDevices } from "dub/models/components";
 
 let value: SalesDevices = {
-    device: "<value>",
-    sales: 1464.41,
-    amount: 6778.17,
+  device: "<value>",
+  sales: 8811.04,
+  amount: 2497.96,
 };
 ```
 

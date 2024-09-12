@@ -6,8 +6,8 @@
 import { LeadsTopUrls } from "dub/models/components";
 
 let value: LeadsTopUrls = {
-    url: "http://fruitful-adjective.net",
-    leads: 8423.42,
+  url: "https://unlined-mole.name",
+  leads: 2230.81,
 };
 ```
 

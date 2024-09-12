@@ -5,37 +5,40 @@
 import * as z from "zod";
 
 export type ClicksReferers = {
-    /**
-     * The name of the referer. If unknown, this will be `(direct)`
-     */
-    referer: string;
-    /**
-     * The number of clicks from this referer
-     */
-    clicks: number;
+  /**
+   * The name of the referer. If unknown, this will be `(direct)`
+   */
+  referer: string;
+  /**
+   * The number of clicks from this referer
+   */
+  clicks: number;
 };
 
 /** @internal */
-export const ClicksReferers$inboundSchema: z.ZodType<ClicksReferers, z.ZodTypeDef, unknown> =
-    z.object({
-        referer: z.string(),
-        clicks: z.number(),
-    });
+export const ClicksReferers$inboundSchema: z.ZodType<
+  ClicksReferers,
+  z.ZodTypeDef,
+  unknown
+> = z.object({
+  referer: z.string(),
+  clicks: z.number(),
+});
 
 /** @internal */
 export type ClicksReferers$Outbound = {
-    referer: string;
-    clicks: number;
+  referer: string;
+  clicks: number;
 };
 
 /** @internal */
 export const ClicksReferers$outboundSchema: z.ZodType<
-    ClicksReferers$Outbound,
-    z.ZodTypeDef,
-    ClicksReferers
+  ClicksReferers$Outbound,
+  z.ZodTypeDef,
+  ClicksReferers
 > = z.object({
-    referer: z.string(),
-    clicks: z.number(),
+  referer: z.string(),
+  clicks: z.number(),
 });
 
 /**
@@ -43,10 +46,10 @@ export const ClicksReferers$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace ClicksReferers$ {
-    /** @deprecated use `ClicksReferers$inboundSchema` instead. */
-    export const inboundSchema = ClicksReferers$inboundSchema;
-    /** @deprecated use `ClicksReferers$outboundSchema` instead. */
-    export const outboundSchema = ClicksReferers$outboundSchema;
-    /** @deprecated use `ClicksReferers$Outbound` instead. */
-    export type Outbound = ClicksReferers$Outbound;
+  /** @deprecated use `ClicksReferers$inboundSchema` instead. */
+  export const inboundSchema = ClicksReferers$inboundSchema;
+  /** @deprecated use `ClicksReferers$outboundSchema` instead. */
+  export const outboundSchema = ClicksReferers$outboundSchema;
+  /** @deprecated use `ClicksReferers$Outbound` instead. */
+  export type Outbound = ClicksReferers$Outbound;
 }

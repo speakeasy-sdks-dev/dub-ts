@@ -5,37 +5,40 @@
 import * as z from "zod";
 
 export type ClicksDevices = {
-    /**
-     * The name of the device
-     */
-    device: string;
-    /**
-     * The number of clicks from this device
-     */
-    clicks: number;
+  /**
+   * The name of the device
+   */
+  device: string;
+  /**
+   * The number of clicks from this device
+   */
+  clicks: number;
 };
 
 /** @internal */
-export const ClicksDevices$inboundSchema: z.ZodType<ClicksDevices, z.ZodTypeDef, unknown> =
-    z.object({
-        device: z.string(),
-        clicks: z.number(),
-    });
+export const ClicksDevices$inboundSchema: z.ZodType<
+  ClicksDevices,
+  z.ZodTypeDef,
+  unknown
+> = z.object({
+  device: z.string(),
+  clicks: z.number(),
+});
 
 /** @internal */
 export type ClicksDevices$Outbound = {
-    device: string;
-    clicks: number;
+  device: string;
+  clicks: number;
 };
 
 /** @internal */
 export const ClicksDevices$outboundSchema: z.ZodType<
-    ClicksDevices$Outbound,
-    z.ZodTypeDef,
-    ClicksDevices
+  ClicksDevices$Outbound,
+  z.ZodTypeDef,
+  ClicksDevices
 > = z.object({
-    device: z.string(),
-    clicks: z.number(),
+  device: z.string(),
+  clicks: z.number(),
 });
 
 /**
@@ -43,10 +46,10 @@ export const ClicksDevices$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace ClicksDevices$ {
-    /** @deprecated use `ClicksDevices$inboundSchema` instead. */
-    export const inboundSchema = ClicksDevices$inboundSchema;
-    /** @deprecated use `ClicksDevices$outboundSchema` instead. */
-    export const outboundSchema = ClicksDevices$outboundSchema;
-    /** @deprecated use `ClicksDevices$Outbound` instead. */
-    export type Outbound = ClicksDevices$Outbound;
+  /** @deprecated use `ClicksDevices$inboundSchema` instead. */
+  export const inboundSchema = ClicksDevices$inboundSchema;
+  /** @deprecated use `ClicksDevices$outboundSchema` instead. */
+  export const outboundSchema = ClicksDevices$outboundSchema;
+  /** @deprecated use `ClicksDevices$Outbound` instead. */
+  export type Outbound = ClicksDevices$Outbound;
 }

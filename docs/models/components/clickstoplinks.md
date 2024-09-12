@@ -6,14 +6,14 @@
 import { ClicksTopLinks } from "dub/models/components";
 
 let value: ClicksTopLinks = {
-    link: "<value>",
-    id: "<id>",
-    domain: "witty-avocado.name",
-    key: "<key>",
-    shortLink: "<value>",
-    url: "http://shadowy-alfalfa.com",
-    createdAt: "<value>",
-    clicks: 4417.11,
+  link: "<value>",
+  id: "<id>",
+  domain: "bony-trip.biz",
+  key: "<key>",
+  shortLink: "<value>",
+  url: "http://acrobatic-plantation.org",
+  createdAt: "<value>",
+  clicks: 1317.97,
 };
 ```
 

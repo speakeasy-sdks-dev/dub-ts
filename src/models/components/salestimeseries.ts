@@ -5,44 +5,47 @@
 import * as z from "zod";
 
 export type SalesTimeseries = {
-    /**
-     * The starting timestamp of the interval
-     */
-    start: string;
-    /**
-     * The number of sales in the interval
-     */
-    sales: number;
-    /**
-     * The total amount of sales in the interval
-     */
-    amount: number;
+  /**
+   * The starting timestamp of the interval
+   */
+  start: string;
+  /**
+   * The number of sales in the interval
+   */
+  sales: number;
+  /**
+   * The total amount of sales in the interval
+   */
+  amount: number;
 };
 
 /** @internal */
-export const SalesTimeseries$inboundSchema: z.ZodType<SalesTimeseries, z.ZodTypeDef, unknown> =
-    z.object({
-        start: z.string(),
-        sales: z.number(),
-        amount: z.number(),
-    });
+export const SalesTimeseries$inboundSchema: z.ZodType<
+  SalesTimeseries,
+  z.ZodTypeDef,
+  unknown
+> = z.object({
+  start: z.string(),
+  sales: z.number(),
+  amount: z.number(),
+});
 
 /** @internal */
 export type SalesTimeseries$Outbound = {
-    start: string;
-    sales: number;
-    amount: number;
+  start: string;
+  sales: number;
+  amount: number;
 };
 
 /** @internal */
 export const SalesTimeseries$outboundSchema: z.ZodType<
-    SalesTimeseries$Outbound,
-    z.ZodTypeDef,
-    SalesTimeseries
+  SalesTimeseries$Outbound,
+  z.ZodTypeDef,
+  SalesTimeseries
 > = z.object({
-    start: z.string(),
-    sales: z.number(),
-    amount: z.number(),
+  start: z.string(),
+  sales: z.number(),
+  amount: z.number(),
 });
 
 /**
@@ -50,10 +53,10 @@ export const SalesTimeseries$outboundSchema: z.ZodType<
  * @deprecated This namespace will be removed in future versions. Use schemas and types that are exported directly from this module.
  */
 export namespace SalesTimeseries$ {
-    /** @deprecated use `SalesTimeseries$inboundSchema` instead. */
-    export const inboundSchema = SalesTimeseries$inboundSchema;
-    /** @deprecated use `SalesTimeseries$outboundSchema` instead. */
-    export const outboundSchema = SalesTimeseries$outboundSchema;
-    /** @deprecated use `SalesTimeseries$Outbound` instead. */
-    export type Outbound = SalesTimeseries$Outbound;
+  /** @deprecated use `SalesTimeseries$inboundSchema` instead. */
+  export const inboundSchema = SalesTimeseries$inboundSchema;
+  /** @deprecated use `SalesTimeseries$outboundSchema` instead. */
+  export const outboundSchema = SalesTimeseries$outboundSchema;
+  /** @deprecated use `SalesTimeseries$Outbound` instead. */
+  export type Outbound = SalesTimeseries$Outbound;
 }
