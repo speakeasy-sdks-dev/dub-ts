@@ -1,10 +1,10 @@
 lockVersion: 2.0.0
 id: f28179cc-ef59-426d-9e85-60cec22fc642
 management:
-  docChecksum: 5124eb4c8a9ec61cd5ee7393fdecd832
+  docChecksum: f76a5b248fa9e77f6018bcef731b63c6
   docVersion: 0.0.1
-  speakeasyVersion: 1.396.9
-  generationVersion: 2.415.7
+  speakeasyVersion: internal
+  generationVersion: 2.416.1
   releaseVersion: 0.40.0
   configChecksum: 2430facfec78d45fa55a087dd4ac78c3
   repoURL: https://github.com/dubinc/dub-ts.git
