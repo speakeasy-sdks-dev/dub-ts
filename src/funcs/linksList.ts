@@ -36,7 +36,7 @@ import {
  */
 export async function linksList(
   client$: DubCore,
-  request: operations.GetLinksRequest,
+  request?: operations.GetLinksRequest | undefined,
   options?: RequestOptions,
 ): Promise<
   PageIterator<
@@ -77,17 +77,17 @@ export async function linksList(
   const path$ = pathToFunc("/links")();
 
   const query$ = encodeFormQuery$({
-    "domain": payload$.domain,
-    "page": payload$.page,
-    "pageSize": payload$.pageSize,
-    "search": payload$.search,
-    "showArchived": payload$.showArchived,
-    "sort": payload$.sort,
-    "tagId": payload$.tagId,
-    "tagIds": payload$.tagIds,
-    "tagNames": payload$.tagNames,
-    "userId": payload$.userId,
-    "withTags": payload$.withTags,
+    "domain": payload$?.domain,
+    "page": payload$?.page,
+    "pageSize": payload$?.pageSize,
+    "search": payload$?.search,
+    "showArchived": payload$?.showArchived,
+    "sort": payload$?.sort,
+    "tagId": payload$?.tagId,
+    "tagIds": payload$?.tagIds,
+    "tagNames": payload$?.tagNames,
+    "userId": payload$?.userId,
+    "withTags": payload$?.withTags,
   });
 
   const headers$ = new Headers({
@@ -203,7 +203,7 @@ export async function linksList(
       | ConnectionError
     >
   > => {
-    const page = input$.page || 0;
+    const page = input$?.page || 0;
     const nextPage = page + 1;
 
     if (!responseData) {
@@ -215,7 +215,7 @@ export async function linksList(
     if (!Array.isArray(results) || !results.length) {
       return () => null;
     }
-    const limit = input$.pageSize || 0;
+    const limit = input$?.pageSize || 0;
     if (results.length < limit) {
       return () => null;
     }

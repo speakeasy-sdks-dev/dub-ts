@@ -30,7 +30,7 @@ import { Result } from "../types/fp.js";
  */
 export async function eventsList(
   client$: DubCore,
-  request: operations.ListEventsRequest,
+  request?: operations.ListEventsRequest | undefined,
   options?: RequestOptions,
 ): Promise<
   Result<
@@ -69,30 +69,30 @@ export async function eventsList(
   const path$ = pathToFunc("/events")();
 
   const query$ = encodeFormQuery$({
-    "browser": payload$.browser,
-    "city": payload$.city,
-    "continent": payload$.continent,
-    "country": payload$.country,
-    "device": payload$.device,
-    "domain": payload$.domain,
-    "end": payload$.end,
-    "event": payload$.event,
-    "externalId": payload$.externalId,
-    "interval": payload$.interval,
-    "key": payload$.key,
-    "limit": payload$.limit,
-    "linkId": payload$.linkId,
-    "order": payload$.order,
-    "os": payload$.os,
-    "page": payload$.page,
-    "qr": payload$.qr,
-    "referer": payload$.referer,
-    "root": payload$.root,
-    "sortBy": payload$.sortBy,
-    "start": payload$.start,
-    "tagId": payload$.tagId,
-    "timezone": payload$.timezone,
-    "url": payload$.url,
+    "browser": payload$?.browser,
+    "city": payload$?.city,
+    "continent": payload$?.continent,
+    "country": payload$?.country,
+    "device": payload$?.device,
+    "domain": payload$?.domain,
+    "end": payload$?.end,
+    "event": payload$?.event,
+    "externalId": payload$?.externalId,
+    "interval": payload$?.interval,
+    "key": payload$?.key,
+    "limit": payload$?.limit,
+    "linkId": payload$?.linkId,
+    "order": payload$?.order,
+    "os": payload$?.os,
+    "page": payload$?.page,
+    "qr": payload$?.qr,
+    "referer": payload$?.referer,
+    "root": payload$?.root,
+    "sortBy": payload$?.sortBy,
+    "start": payload$?.start,
+    "tagId": payload$?.tagId,
+    "timezone": payload$?.timezone,
+    "url": payload$?.url,
   });
 
   const headers$ = new Headers({

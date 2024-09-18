@@ -204,7 +204,7 @@ const dub = new Dub({
 async function run() {
   let result;
   try {
-    result = await dub.links.list({});
+    result = await dub.links.list();
 
     for await (const page of result) {
       // Handle the page
@@ -296,7 +296,7 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.list({});
+  const result = await dub.links.list();
 
   for await (const page of result) {
     // Handle the page
@@ -322,7 +322,7 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.list({});
+  const result = await dub.links.list();
 
   for await (const page of result) {
     // Handle the page
@@ -404,7 +404,7 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.list({});
+  const result = await dub.links.list();
 
   for await (const page of result) {
     // Handle the page
@@ -431,7 +431,7 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.list({}, {
+  const result = await dub.links.list({
     retries: {
       strategy: "backoff",
       backoff: {
@@ -473,7 +473,7 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.list({});
+  const result = await dub.links.list();
 
   for await (const page of result) {
     // Handle the page
@@ -506,7 +506,7 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.list({});
+  const result = await dub.links.list();
 
   for await (const page of result) {
     // Handle the page
