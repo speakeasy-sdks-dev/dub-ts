@@ -31,7 +31,7 @@ import { Result } from "../types/fp.js";
  */
 export async function linksGet(
   client$: DubCore,
-  request: operations.GetLinkInfoRequest,
+  request?: operations.GetLinkInfoRequest | undefined,
   options?: RequestOptions,
 ): Promise<
   Result<
@@ -70,10 +70,10 @@ export async function linksGet(
   const path$ = pathToFunc("/links/info")();
 
   const query$ = encodeFormQuery$({
-    "domain": payload$.domain,
-    "externalId": payload$.externalId,
-    "key": payload$.key,
-    "linkId": payload$.linkId,
+    "domain": payload$?.domain,
+    "externalId": payload$?.externalId,
+    "key": payload$?.key,
+    "linkId": payload$?.linkId,
   });
 
   const headers$ = new Headers({

@@ -30,7 +30,7 @@ import { Result } from "../types/fp.js";
  */
 export async function analyticsRetrieve(
   client$: DubCore,
-  request: operations.RetrieveAnalyticsRequest,
+  request?: operations.RetrieveAnalyticsRequest | undefined,
   options?: RequestOptions,
 ): Promise<
   Result<
@@ -70,27 +70,27 @@ export async function analyticsRetrieve(
   const path$ = pathToFunc("/analytics")();
 
   const query$ = encodeFormQuery$({
-    "browser": payload$.browser,
-    "city": payload$.city,
-    "continent": payload$.continent,
-    "country": payload$.country,
-    "device": payload$.device,
-    "domain": payload$.domain,
-    "end": payload$.end,
-    "event": payload$.event,
-    "externalId": payload$.externalId,
-    "groupBy": payload$.groupBy,
-    "interval": payload$.interval,
-    "key": payload$.key,
-    "linkId": payload$.linkId,
-    "os": payload$.os,
-    "qr": payload$.qr,
-    "referer": payload$.referer,
-    "root": payload$.root,
-    "start": payload$.start,
-    "tagId": payload$.tagId,
-    "timezone": payload$.timezone,
-    "url": payload$.url,
+    "browser": payload$?.browser,
+    "city": payload$?.city,
+    "continent": payload$?.continent,
+    "country": payload$?.country,
+    "device": payload$?.device,
+    "domain": payload$?.domain,
+    "end": payload$?.end,
+    "event": payload$?.event,
+    "externalId": payload$?.externalId,
+    "groupBy": payload$?.groupBy,
+    "interval": payload$?.interval,
+    "key": payload$?.key,
+    "linkId": payload$?.linkId,
+    "os": payload$?.os,
+    "qr": payload$?.qr,
+    "referer": payload$?.referer,
+    "root": payload$?.root,
+    "start": payload$?.start,
+    "tagId": payload$?.tagId,
+    "timezone": payload$?.timezone,
+    "url": payload$?.url,
   });
 
   const headers$ = new Headers({
