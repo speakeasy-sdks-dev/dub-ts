@@ -57,7 +57,8 @@ export async function eventsList(
 
   const parsed$ = schemas$.safeParse(
     input$,
-    (value$) => operations.ListEventsRequest$outboundSchema.parse(value$),
+    (value$) =>
+      operations.ListEventsRequest$outboundSchema.optional().parse(value$),
     "Input validation failed",
   );
   if (!parsed$.ok) {

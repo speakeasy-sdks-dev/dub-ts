@@ -58,7 +58,9 @@ export async function analyticsRetrieve(
   const parsed$ = schemas$.safeParse(
     input$,
     (value$) =>
-      operations.RetrieveAnalyticsRequest$outboundSchema.parse(value$),
+      operations.RetrieveAnalyticsRequest$outboundSchema.optional().parse(
+        value$,
+      ),
     "Input validation failed",
   );
   if (!parsed$.ok) {

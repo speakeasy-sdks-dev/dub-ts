@@ -65,7 +65,8 @@ export async function domainsList(
 
   const parsed$ = schemas$.safeParse(
     input$,
-    (value$) => operations.ListDomainsRequest$outboundSchema.parse(value$),
+    (value$) =>
+      operations.ListDomainsRequest$outboundSchema.optional().parse(value$),
     "Input validation failed",
   );
   if (!parsed$.ok) {

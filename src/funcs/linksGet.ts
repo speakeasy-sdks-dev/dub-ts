@@ -58,7 +58,8 @@ export async function linksGet(
 
   const parsed$ = schemas$.safeParse(
     input$,
-    (value$) => operations.GetLinkInfoRequest$outboundSchema.parse(value$),
+    (value$) =>
+      operations.GetLinkInfoRequest$outboundSchema.optional().parse(value$),
     "Input validation failed",
   );
   if (!parsed$.ok) {

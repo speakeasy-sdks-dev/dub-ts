@@ -58,7 +58,8 @@ export async function linksCount(
 
   const parsed$ = schemas$.safeParse(
     input$,
-    (value$) => operations.GetLinksCountRequest$outboundSchema.parse(value$),
+    (value$) =>
+      operations.GetLinksCountRequest$outboundSchema.optional().parse(value$),
     "Input validation failed",
   );
   if (!parsed$.ok) {
