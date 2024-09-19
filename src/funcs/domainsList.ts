@@ -36,7 +36,7 @@ import {
  */
 export async function domainsList(
   client$: DubCore,
-  request: operations.ListDomainsRequest,
+  request?: operations.ListDomainsRequest | undefined,
   options?: RequestOptions,
 ): Promise<
   PageIterator<
@@ -65,7 +65,8 @@ export async function domainsList(
 
   const parsed$ = schemas$.safeParse(
     input$,
-    (value$) => operations.ListDomainsRequest$outboundSchema.parse(value$),
+    (value$) =>
+      operations.ListDomainsRequest$outboundSchema.optional().parse(value$),
     "Input validation failed",
   );
   if (!parsed$.ok) {
@@ -77,10 +78,10 @@ export async function domainsList(
   const path$ = pathToFunc("/domains")();
 
   const query$ = encodeFormQuery$({
-    "archived": payload$.archived,
-    "page": payload$.page,
-    "pageSize": payload$.pageSize,
-    "search": payload$.search,
+    "archived": payload$?.archived,
+    "page": payload$?.page,
+    "pageSize": payload$?.pageSize,
+    "search": payload$?.search,
   });
 
   const headers$ = new Headers({
@@ -198,7 +199,7 @@ export async function domainsList(
       | ConnectionError
     >
   > => {
-    const page = input$.page || 0;
+    const page = input$?.page || 0;
     const nextPage = page + 1;
 
     if (!responseData) {
@@ -210,7 +211,7 @@ export async function domainsList(
     if (!Array.isArray(results) || !results.length) {
       return () => null;
     }
-    const limit = input$.pageSize || 0;
+    const limit = input$?.pageSize || 0;
     if (results.length < limit) {
       return () => null;
     }

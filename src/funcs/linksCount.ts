@@ -31,7 +31,7 @@ import { Result } from "../types/fp.js";
  */
 export async function linksCount(
   client$: DubCore,
-  request: operations.GetLinksCountRequest,
+  request?: operations.GetLinksCountRequest | undefined,
   options?: RequestOptions,
 ): Promise<
   Result<
@@ -58,7 +58,8 @@ export async function linksCount(
 
   const parsed$ = schemas$.safeParse(
     input$,
-    (value$) => operations.GetLinksCountRequest$outboundSchema.parse(value$),
+    (value$) =>
+      operations.GetLinksCountRequest$outboundSchema.optional().parse(value$),
     "Input validation failed",
   );
   if (!parsed$.ok) {
@@ -70,15 +71,15 @@ export async function linksCount(
   const path$ = pathToFunc("/links/count")();
 
   const query$ = encodeFormQuery$({
-    "domain": payload$.domain,
-    "groupBy": payload$.groupBy,
-    "search": payload$.search,
-    "showArchived": payload$.showArchived,
-    "tagId": payload$.tagId,
-    "tagIds": payload$.tagIds,
-    "tagNames": payload$.tagNames,
-    "userId": payload$.userId,
-    "withTags": payload$.withTags,
+    "domain": payload$?.domain,
+    "groupBy": payload$?.groupBy,
+    "search": payload$?.search,
+    "showArchived": payload$?.showArchived,
+    "tagId": payload$?.tagId,
+    "tagIds": payload$?.tagIds,
+    "tagNames": payload$?.tagNames,
+    "userId": payload$?.userId,
+    "withTags": payload$?.withTags,
   });
 
   const headers$ = new Headers({

@@ -31,7 +31,7 @@ import { Result } from "../types/fp.js";
  */
 export async function linksGet(
   client$: DubCore,
-  request: operations.GetLinkInfoRequest,
+  request?: operations.GetLinkInfoRequest | undefined,
   options?: RequestOptions,
 ): Promise<
   Result<
@@ -58,7 +58,8 @@ export async function linksGet(
 
   const parsed$ = schemas$.safeParse(
     input$,
-    (value$) => operations.GetLinkInfoRequest$outboundSchema.parse(value$),
+    (value$) =>
+      operations.GetLinkInfoRequest$outboundSchema.optional().parse(value$),
     "Input validation failed",
   );
   if (!parsed$.ok) {
@@ -70,10 +71,10 @@ export async function linksGet(
   const path$ = pathToFunc("/links/info")();
 
   const query$ = encodeFormQuery$({
-    "domain": payload$.domain,
-    "externalId": payload$.externalId,
-    "key": payload$.key,
-    "linkId": payload$.linkId,
+    "domain": payload$?.domain,
+    "externalId": payload$?.externalId,
+    "key": payload$?.key,
+    "linkId": payload$?.linkId,
   });
 
   const headers$ = new Headers({
