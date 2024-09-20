@@ -7,15 +7,15 @@ import { WebhookEventClick } from "dub/models/components";
 
 let value: WebhookEventClick = {
   id: "<id>",
-  url: "http://pretty-inch.name",
+  url: "https://abandoned-drive.info/",
   continent: "<value>",
-  country: "Virgin Islands, British",
-  city: "Robbieworth",
+  country: "New Zealand",
+  city: "Lake Princeberg",
   device: "<value>",
   browser: "<value>",
   os: "<value>",
   referer: "<value>",
-  ip: "234.4.170.178",
+  ip: "133.115.204.245",
 };
 ```
 

@@ -7,15 +7,15 @@ import { WebhookEvent3Click } from "dub/models/components";
 
 let value: WebhookEvent3Click = {
   id: "<id>",
-  url: "http://irritating-fishbone.org",
+  url: "https://rowdy-scale.biz",
   continent: "<value>",
-  country: "Slovenia",
-  city: "Fort Georgianna",
+  country: "Guinea",
+  city: "Marquesboro",
   device: "<value>",
   browser: "<value>",
   os: "<value>",
   referer: "<value>",
-  ip: "248.178.231.229",
+  ip: "91.207.147.19",
 };
 ```
 

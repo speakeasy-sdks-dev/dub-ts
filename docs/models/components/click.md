@@ -7,15 +7,15 @@ import { Click } from "dub/models/components";
 
 let value: Click = {
   id: "<id>",
-  url: "https://flamboyant-dwarf.info",
+  url: "https://late-utilization.name",
   continent: "<value>",
-  country: "Nauru",
-  city: "Keeblerside",
+  country: "Solomon Islands",
+  city: "Schenectady",
   device: "<value>",
   browser: "<value>",
   os: "<value>",
   referer: "<value>",
-  ip: "34.26.76.23",
+  ip: "160.101.16.108",
 };
 ```
 
