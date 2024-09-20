@@ -7,15 +7,15 @@ import { LeadEventClick } from "dub/models/components";
 
 let value: LeadEventClick = {
   id: "<id>",
-  url: "http://drafty-correspondent.biz",
+  url: "https://orderly-porter.net/",
   continent: "<value>",
-  country: "Cocos (Keeling) Islands",
-  city: "Fort Kevin",
+  country: "United States Minor Outlying Islands",
+  city: "Lake Laynestead",
   device: "<value>",
   browser: "<value>",
   os: "<value>",
   referer: "<value>",
-  ip: "189.115.125.248",
+  ip: "0fbb:7b29:bf15:9ddd:2fdb:ebec:fe03:8e63",
 };
 ```
 
