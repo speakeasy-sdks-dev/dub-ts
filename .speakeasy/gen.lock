@@ -1,10 +1,10 @@
 lockVersion: 2.0.0
 id: f28179cc-ef59-426d-9e85-60cec22fc642
 management:
-  docChecksum: 81fbec1fddce6a9104ba0a932fec5804
+  docChecksum: 546e6b4bf7062e7f7c5927187fc8445a
   docVersion: 0.0.1
-  speakeasyVersion: 1.398.0
-  generationVersion: 2.415.8
+  speakeasyVersion: internal
+  generationVersion: 2.421.1
   releaseVersion: 0.40.1
   configChecksum: 357a201da4458ae60d20a39e129978f4
   repoURL: https://github.com/dubinc/dub-ts.git
@@ -14,7 +14,7 @@ features:
   typescript:
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.11
-    core: 3.17.3
+    core: 3.17.6
     defaultEnabledRetries: 0.1.0
     deprecations: 2.81.1
     enumUnions: 0.1.0
@@ -27,6 +27,7 @@ features:
     globalSecurityFlattening: 0.1.0
     globalServerURLs: 2.82.4
     includes: 2.81.1
+    methodArguments: 0.1.2
     nameOverrides: 2.81.2
     nullables: 0.1.0
     pagination: 2.82.6
@@ -367,6 +368,10 @@ generatedFiles:
 examples:
   getLinks:
     speakeasy-default-get-links:
+      parameters:
+        query:
+          page: 1
+          pageSize: 50
       responses:
         "200":
           application/json: []
@@ -436,6 +441,10 @@ examples:
           application/json: {"error": {"code": "internal_server_error", "message": "The requested resource was not found."}}
   getLinkInfo:
     speakeasy-default-get-link-info:
+      parameters:
+        query:
+          linkId: "clux0rgak00011..."
+          externalId: "ext_123456"
       responses:
         "200":
           application/json: {"id": "<id>", "domain": "ringed-blow.name", "key": "<key>", "externalId": "<value>", "url": "https://monumental-spaghetti.name", "expiresAt": "<value>", "expiredUrl": "http://wiggly-substitution.info", "password": "fKH9v5zJBmg5IWA", "title": "<value>", "description": "Optional reciprocal projection", "image": "https://loremflickr.com/640/480", "video": "<value>", "ios": "<value>", "android": "<value>", "tagId": "<value>", "tags": [], "comments": "<value>", "shortLink": "https://hefty-festival.net", "qrCode": "https://pale-civilisation.name", "utm_source": "<value>", "utm_medium": "<value>", "utm_campaign": "<value>", "utm_term": "<value>", "utm_content": "<value>", "userId": "<value>", "workspaceId": "<value>", "lastClicked": "<value>", "createdAt": "<value>", "updatedAt": "<value>", "projectId": "<value>"}
@@ -632,6 +641,14 @@ examples:
           application/json: {"error": {"code": "internal_server_error", "message": "The requested resource was not found."}}
   retrieveAnalytics:
     speakeasy-default-retrieve-analytics:
+      parameters:
+        query:
+          timezone: "America/New_York"
+          city: "New York"
+          device: "Desktop"
+          browser: "Chrome"
+          os: "Windows"
+          referer: "google.com"
       responses:
         "200":
           application/json: []
@@ -655,6 +672,14 @@ examples:
           application/json: {"error": {"code": "internal_server_error", "message": "The requested resource was not found."}}
   listEvents:
     speakeasy-default-list-events:
+      parameters:
+        query:
+          timezone: "America/New_York"
+          city: "New York"
+          device: "Desktop"
+          browser: "Chrome"
+          os: "Windows"
+          referer: "google.com"
       responses:
         "200":
           application/json: []
@@ -828,6 +853,10 @@ examples:
           application/json: {"error": {"code": "internal_server_error", "message": "The requested resource was not found."}}
   listDomains:
     speakeasy-default-list-domains:
+      parameters:
+        query:
+          page: 1
+          pageSize: 50
       responses:
         "200":
           application/json: []
