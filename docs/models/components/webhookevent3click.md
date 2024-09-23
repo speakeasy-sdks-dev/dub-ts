@@ -7,15 +7,15 @@ import { WebhookEvent3Click } from "dub/models/components";
 
 let value: WebhookEvent3Click = {
   id: "<id>",
-  url: "https://black-and-white-sweatshop.net",
+  url: "https://rowdy-scale.biz",
   continent: "<value>",
-  country: "Chad",
-  city: "Long Beach",
+  country: "Guinea",
+  city: "Marquesboro",
   device: "<value>",
   browser: "<value>",
   os: "<value>",
   referer: "<value>",
-  ip: "4b66:debf:cead:c4a0:75ba:2be5:ed0a:f0db",
+  ip: "91.207.147.19",
 };
 ```
 
