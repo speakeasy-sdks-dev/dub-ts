@@ -5,7 +5,7 @@
 ```typescript
 import { WebhookEventEvent } from "dub/models/components";
 
-let value: WebhookEventEvent = "link.created";
+let value: WebhookEventEvent = "link.deleted";
 ```
 
 ## Supported Types

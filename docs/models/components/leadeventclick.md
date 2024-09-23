@@ -7,15 +7,15 @@ import { LeadEventClick } from "dub/models/components";
 
 let value: LeadEventClick = {
   id: "<id>",
-  url: "https://second-hand-gripper.name/",
+  url: "https://orderly-porter.net/",
   continent: "<value>",
-  country: "China",
-  city: "South Fionashire",
+  country: "United States Minor Outlying Islands",
+  city: "Lake Laynestead",
   device: "<value>",
   browser: "<value>",
   os: "<value>",
   referer: "<value>",
-  ip: "ad1c:cf65:20ee:b6c1:afd7:f5ee:bdd6:cd07",
+  ip: "0fbb:7b29:bf15:9ddd:2fdb:ebec:fe03:8e63",
 };
 ```
 
