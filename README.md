@@ -109,10 +109,10 @@ run();
 
 ### [domains](docs/sdks/domains/README.md)
 
-* [create](docs/sdks/domains/README.md#create) - Create a domain
 * [list](docs/sdks/domains/README.md#list) - Retrieve a list of domains
-* [update](docs/sdks/domains/README.md#update) - Update a domain
+* [create](docs/sdks/domains/README.md#create) - Create a domain
 * [delete](docs/sdks/domains/README.md#delete) - Delete a domain
+* [update](docs/sdks/domains/README.md#update) - Update a domain
 
 
 ### [events](docs/sdks/events/README.md)
@@ -121,15 +121,15 @@ run();
 
 ### [links](docs/sdks/links/README.md)
 
-* [create](docs/sdks/links/README.md#create) - Create a new link
 * [list](docs/sdks/links/README.md#list) - Retrieve a list of links
+* [create](docs/sdks/links/README.md#create) - Create a new link
 * [count](docs/sdks/links/README.md#count) - Retrieve links count
 * [get](docs/sdks/links/README.md#get) - Retrieve a link
-* [update](docs/sdks/links/README.md#update) - Update a link
 * [delete](docs/sdks/links/README.md#delete) - Delete a link
+* [update](docs/sdks/links/README.md#update) - Update a link
 * [createMany](docs/sdks/links/README.md#createmany) - Bulk create links
-* [updateMany](docs/sdks/links/README.md#updatemany) - Bulk update links
 * [deleteMany](docs/sdks/links/README.md#deletemany) - Bulk delete links
+* [updateMany](docs/sdks/links/README.md#updatemany) - Bulk update links
 * [upsert](docs/sdks/links/README.md#upsert) - Upsert a link
 
 ### [metatags](docs/sdks/metatags/README.md)
@@ -142,10 +142,10 @@ run();
 
 ### [tags](docs/sdks/tags/README.md)
 
-* [create](docs/sdks/tags/README.md#create) - Create a new tag
 * [list](docs/sdks/tags/README.md#list) - Retrieve a list of tags
-* [update](docs/sdks/tags/README.md#update) - Update a tag
+* [create](docs/sdks/tags/README.md#create) - Create a new tag
 * [delete](docs/sdks/tags/README.md#delete) - Delete a tag
+* [update](docs/sdks/tags/README.md#update) - Update a tag
 
 ### [track](docs/sdks/track/README.md)
 
@@ -204,10 +204,12 @@ const dub = new Dub({
 async function run() {
   let result;
   try {
-    result = await dub.links.create();
+    result = await dub.links.list();
 
-    // Handle the result
-    console.log(result);
+    for await (const page of result) {
+      // Handle the page
+      console.log(page);
+    }
   } catch (err) {
     switch (true) {
       case (err instanceof SDKValidationError): {
@@ -294,10 +296,12 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.create();
+  const result = await dub.links.list();
 
-  // Handle the result
-  console.log(result);
+  for await (const page of result) {
+    // Handle the page
+    console.log(page);
+  }
 }
 
 run();
@@ -318,10 +322,12 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.create();
+  const result = await dub.links.list();
 
-  // Handle the result
-  console.log(result);
+  for await (const page of result) {
+    // Handle the page
+    console.log(page);
+  }
 }
 
 run();
@@ -398,10 +404,12 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.create();
+  const result = await dub.links.list();
 
-  // Handle the result
-  console.log(result);
+  for await (const page of result) {
+    // Handle the page
+    console.log(page);
+  }
 }
 
 run();
@@ -423,7 +431,7 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.create({
+  const result = await dub.links.list({
     retries: {
       strategy: "backoff",
       backoff: {
@@ -436,8 +444,10 @@ async function run() {
     },
   });
 
-  // Handle the result
-  console.log(result);
+  for await (const page of result) {
+    // Handle the page
+    console.log(page);
+  }
 }
 
 run();
@@ -463,10 +473,12 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.create();
+  const result = await dub.links.list();
 
-  // Handle the result
-  console.log(result);
+  for await (const page of result) {
+    // Handle the page
+    console.log(page);
+  }
 }
 
 run();
