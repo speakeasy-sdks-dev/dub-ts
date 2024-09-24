@@ -1,4 +1,4 @@
-speakeasyVersion: 1.401.2
+speakeasyVersion: internal
 sources:
     my-first-source:
         sourceNamespace: my-first-source
@@ -13,8 +13,6 @@ targets:
         sourceNamespace: my-first-source
         sourceRevisionDigest: sha256:5414ed58b405e28ef8b6c30d9418446a79f3fef613cd587456fbe9287ca7c073
         sourceBlobDigest: sha256:1e6b9442e63e8cea75c2531de03f531df841fa4b5c87a248a732cb33f6adc519
-        codeSamplesNamespace: code-samples-typescript-my-first-target
-        codeSamplesRevisionDigest: sha256:7cc5be8eb6333ac5ec7e0aa376093aa1d609f4d57638d3d605250811d3d8c1bb
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
