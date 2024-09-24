@@ -7,16 +7,16 @@ import { SaleEventClick } from "dub/models/components";
 
 let value: SaleEventClick = {
   id: "<id>",
-  url: "https://stylish-language.info",
+  url: "https://pessimistic-captain.net/",
   continent: "<value>",
-  country: "Senegal",
-  city: "South Josiechester",
+  country: "New Zealand",
+  city: "Las Cruces",
   device: "<value>",
   browser: "<value>",
   os: "<value>",
   referer: "<value>",
   refererUrl: "<value>",
-  ip: "58.105.159.227",
+  ip: "16f9:32ba:da98:bda0:fef3:a37e:e67d:f35d",
 };
 ```
 
