@@ -7,16 +7,16 @@ import { WebhookEvent4Click } from "dub/models/components";
 
 let value: WebhookEvent4Click = {
   id: "<id>",
-  url: "https://unlined-grandson.org/",
+  url: "https://alive-horst.name",
   continent: "<value>",
-  country: "Papua New Guinea",
-  city: "Rocky Mount",
+  country: "Suriname",
+  city: "Vladimirboro",
   device: "<value>",
   browser: "<value>",
   os: "<value>",
   referer: "<value>",
   refererUrl: "<value>",
-  ip: "128.96.93.66",
+  ip: "123.65.210.59",
 };
 ```
 
