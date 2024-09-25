@@ -7,16 +7,16 @@ import { WebhookEventClick } from "dub/models/components";
 
 let value: WebhookEventClick = {
   id: "<id>",
-  url: "https://internal-amnesty.net",
+  url: "https://secondary-recovery.org/",
   continent: "<value>",
-  country: "Lesotho",
-  city: "Rogahnfield",
+  country: "Sierra Leone",
+  city: "South Maybelle",
   device: "<value>",
   browser: "<value>",
   os: "<value>",
   referer: "<value>",
   refererUrl: "<value>",
-  ip: "205.140.121.172",
+  ip: "49.123.76.220",
 };
 ```
 

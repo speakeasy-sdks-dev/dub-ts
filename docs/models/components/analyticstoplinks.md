@@ -8,10 +8,10 @@ import { AnalyticsTopLinks } from "dub/models/components";
 let value: AnalyticsTopLinks = {
   link: "<value>",
   id: "<id>",
-  domain: "sugary-brace.org",
+  domain: "finished-ceramic.com",
   key: "<key>",
   shortLink: "<value>",
-  url: "https://wobbly-instance.org/",
+  url: "https://fatal-import.net/",
   createdAt: "<value>",
 };
 ```
