@@ -7,7 +7,7 @@ The continent to retrieve analytics for.
 ```typescript
 import { ContinentCode } from "dub/models/components";
 
-let value: ContinentCode = "NA";
+let value: ContinentCode = "AF";
 ```
 
 ## Values

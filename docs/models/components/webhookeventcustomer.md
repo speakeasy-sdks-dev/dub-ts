@@ -8,8 +8,8 @@ import { WebhookEventCustomer } from "dub/models/components";
 let value: WebhookEventCustomer = {
   id: "<id>",
   name: "<value>",
-  email: "Sammie_Bergnaum-Bayer@hotmail.com",
-  avatar: "https://picsum.photos/seed/LwegfxH/3929/1602",
+  email: "Niko.Mann10@yahoo.com",
+  avatar: "https://loremflickr.com/1431/19?lock=5982555669888050",
 };
 ```
 
