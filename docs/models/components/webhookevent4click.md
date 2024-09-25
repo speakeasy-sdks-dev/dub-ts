@@ -7,16 +7,16 @@ import { WebhookEvent4Click } from "dub/models/components";
 
 let value: WebhookEvent4Click = {
   id: "<id>",
-  url: "https://shady-battle.org/",
-  continent: "<value>",
-  country: "Romania",
-  city: "Fort Jodyworth",
-  device: "<value>",
-  browser: "<value>",
-  os: "<value>",
-  referer: "<value>",
-  refererUrl: "<value>",
-  ip: "136.74.77.151",
+  url: "https://swift-coil.net",
+  continent: "Europe",
+  country: "Timor-Leste",
+  city: "Burien",
+  device: "Desktop",
+  browser: "Safari",
+  os: "MacOS",
+  referer: "dim-swing.org",
+  refererUrl: "https://tender-strait.name/",
+  ip: "c6d5:39fd:fe33:24dc:d8cb:6d3a:3a89:5265",
 };
 ```
 

@@ -7,16 +7,16 @@ import { WebhookEvent3Click } from "dub/models/components";
 
 let value: WebhookEvent3Click = {
   id: "<id>",
-  url: "https://brave-barge.biz/",
-  continent: "<value>",
-  country: "Central African Republic",
-  city: "Catalina Foothills",
-  device: "<value>",
-  browser: "<value>",
-  os: "<value>",
-  referer: "<value>",
-  refererUrl: "<value>",
-  ip: "ccbf:8bc8:fd29:bfe5:aacf:fc7d:e90a:bbab",
+  url: "https://made-up-leading.com",
+  continent: "Africa",
+  country: "Germany",
+  city: "Mayamouth",
+  device: "Mobile",
+  browser: "Firefox",
+  os: "Windows",
+  referer: "intelligent-blowgun.biz",
+  refererUrl: "https://tinted-derby.info",
+  ip: "195.8.9.29",
 };
 ```
 
