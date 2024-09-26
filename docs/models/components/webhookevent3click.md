@@ -7,16 +7,16 @@ import { WebhookEvent3Click } from "dub/models/components";
 
 let value: WebhookEvent3Click = {
   id: "<id>",
-  url: "https://black-and-white-sweatshop.net",
-  continent: "<value>",
-  country: "Chad",
-  city: "Long Beach",
-  device: "<value>",
-  browser: "<value>",
-  os: "<value>",
-  referer: "<value>",
-  refererUrl: "<value>",
-  ip: "4b66:debf:cead:c4a0:75ba:2be5:ed0a:f0db",
+  url: "https://made-up-leading.com",
+  continent: "Africa",
+  country: "Germany",
+  city: "Mayamouth",
+  device: "Mobile",
+  browser: "Firefox",
+  os: "Windows",
+  referer: "intelligent-blowgun.biz",
+  refererUrl: "https://tinted-derby.info",
+  ip: "195.8.9.29",
 };
 ```
 
