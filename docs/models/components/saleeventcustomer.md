@@ -8,8 +8,8 @@ import { SaleEventCustomer } from "dub/models/components";
 let value: SaleEventCustomer = {
   id: "<id>",
   name: "<value>",
-  email: "Bret54@yahoo.com",
-  avatar: "https://picsum.photos/seed/aoXi9/3319/3873",
+  email: "Jada22@gmail.com",
+  avatar: "https://picsum.photos/seed/hYl6orK/3674/1126",
 };
 ```
 
