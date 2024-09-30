@@ -7,16 +7,16 @@ import { WebhookEvent4Click } from "dub/models/components";
 
 let value: WebhookEvent4Click = {
   id: "<id>",
-  url: "https://neat-waterspout.com",
-  continent: "North America",
-  country: "El Salvador",
-  city: "East Patience",
+  url: "https://swift-coil.net",
+  continent: "Europe",
+  country: "Timor-Leste",
+  city: "Burien",
   device: "Desktop",
   browser: "Safari",
-  os: "Blackberry",
-  referer: "bare-siege.name",
-  refererUrl: "https://simplistic-meander.org",
-  ip: "140.75.247.57",
+  os: "MacOS",
+  referer: "dim-swing.org",
+  refererUrl: "https://tender-strait.name/",
+  ip: "c6d5:39fd:fe33:24dc:d8cb:6d3a:3a89:5265",
 };
 ```
 
