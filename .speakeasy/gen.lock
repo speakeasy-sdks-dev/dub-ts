@@ -6,7 +6,7 @@ management:
   speakeasyVersion: internal
   generationVersion: 2.428.2
   releaseVersion: 0.42.0
-  configChecksum: ed39e9667468bdf10ea72c83e14cbcba
+  configChecksum: f2d94f6ac660c4346a1606323d3c4f84
   repoURL: https://github.com/dubinc/dub-ts.git
   installationURL: https://github.com/dubinc/dub-ts
   published: true
@@ -14,14 +14,14 @@ features:
   typescript:
     additionalDependencies: 0.1.0
     constsAndDefaults: 0.1.11
-    core: 3.18.1
+    core: 3.18.2
     defaultEnabledRetries: 0.1.0
     deprecations: 2.81.1
     enumUnions: 0.1.0
     envVarSecurityUsage: 0.1.1
     errors: 2.82.3
     examples: 2.81.4
-    flattening: 2.81.1
+    flattening: 2.82.0
     globalSecurity: 2.82.11
     globalSecurityCallbacks: 0.1.0
     globalSecurityFlattening: 0.1.0
