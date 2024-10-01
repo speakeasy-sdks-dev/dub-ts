@@ -26,7 +26,7 @@ const value: components.AnalyticsTimeseries[] = [
 ```typescript
 const value: components.AnalyticsCountries[] = [
   {
-    country: "AL",
+    country: "NR",
   },
 ];
 ```
@@ -36,8 +36,8 @@ const value: components.AnalyticsCountries[] = [
 ```typescript
 const value: components.AnalyticsCities[] = [
   {
-    city: "Gainesville",
-    country: "AQ",
+    city: "South Wilbertside",
+    country: "GD",
   },
 ];
 ```
@@ -57,7 +57,7 @@ const value: components.AnalyticsDevices[] = [
 ```typescript
 const value: components.AnalyticsBrowsers[] = [
   {
-    browser: "Safari",
+    browser: "Chrome",
   },
 ];
 ```
@@ -67,7 +67,7 @@ const value: components.AnalyticsBrowsers[] = [
 ```typescript
 const value: components.AnalyticsOS[] = [
   {
-    os: "Blackberry",
+    os: "Symbian",
   },
 ];
 ```
@@ -77,7 +77,7 @@ const value: components.AnalyticsOS[] = [
 ```typescript
 const value: components.AnalyticsReferers[] = [
   {
-    referer: "illustrious-straw.info",
+    referer: "waterlogged-sediment.name",
   },
 ];
 ```
@@ -89,10 +89,10 @@ const value: components.AnalyticsTopLinks[] = [
   {
     link: "<value>",
     id: "<id>",
-    domain: "narrow-toothpick.net",
+    domain: "turbulent-embossing.org",
     key: "<key>",
     shortLink: "<value>",
-    url: "https://sour-tennis.net/",
+    url: "https://afraid-folklore.com",
     createdAt: "<value>",
   },
 ];
@@ -103,7 +103,7 @@ const value: components.AnalyticsTopLinks[] = [
 ```typescript
 const value: components.AnalyticsTopUrls[] = [
   {
-    url: "https://superior-beret.biz/",
+    url: "https://livid-king.name",
   },
 ];
 ```
