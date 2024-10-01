@@ -7,16 +7,16 @@ import { WebhookEvent3Click } from "dub/models/components";
 
 let value: WebhookEvent3Click = {
   id: "<id>",
-  url: "https://creative-responsibility.net",
-  continent: "Australia",
-  country: "Moldova",
-  city: "New Georgianahaven",
-  device: "Desktop",
+  url: "https://made-up-leading.com",
+  continent: "Africa",
+  country: "Germany",
+  city: "Mayamouth",
+  device: "Mobile",
   browser: "Firefox",
-  os: "iOS",
-  referer: "ugly-disappointment.com",
-  refererUrl: "https://indelible-mountain.com",
-  ip: "dd08:fe3a:fb0d:528c:0cbb:9cad:8df0:b8ea",
+  os: "Windows",
+  referer: "intelligent-blowgun.biz",
+  refererUrl: "https://tinted-derby.info",
+  ip: "195.8.9.29",
 };
 ```
 

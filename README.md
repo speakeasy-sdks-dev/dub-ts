@@ -109,10 +109,10 @@ run();
 
 ### [domains](docs/sdks/domains/README.md)
 
-* [create](docs/sdks/domains/README.md#create) - Create a domain
 * [list](docs/sdks/domains/README.md#list) - Retrieve a list of domains
-* [update](docs/sdks/domains/README.md#update) - Update a domain
+* [create](docs/sdks/domains/README.md#create) - Create a domain
 * [delete](docs/sdks/domains/README.md#delete) - Delete a domain
+* [update](docs/sdks/domains/README.md#update) - Update a domain
 
 
 ### [events](docs/sdks/events/README.md)
@@ -121,15 +121,15 @@ run();
 
 ### [links](docs/sdks/links/README.md)
 
-* [create](docs/sdks/links/README.md#create) - Create a new link
 * [list](docs/sdks/links/README.md#list) - Retrieve a list of links
+* [create](docs/sdks/links/README.md#create) - Create a new link
 * [count](docs/sdks/links/README.md#count) - Retrieve links count
 * [get](docs/sdks/links/README.md#get) - Retrieve a link
-* [update](docs/sdks/links/README.md#update) - Update a link
 * [delete](docs/sdks/links/README.md#delete) - Delete a link
+* [update](docs/sdks/links/README.md#update) - Update a link
 * [createMany](docs/sdks/links/README.md#createmany) - Bulk create links
-* [updateMany](docs/sdks/links/README.md#updatemany) - Bulk update links
 * [deleteMany](docs/sdks/links/README.md#deletemany) - Bulk delete links
+* [updateMany](docs/sdks/links/README.md#updatemany) - Bulk update links
 * [upsert](docs/sdks/links/README.md#upsert) - Upsert a link
 
 ### [metatags](docs/sdks/metatags/README.md)
@@ -142,10 +142,10 @@ run();
 
 ### [tags](docs/sdks/tags/README.md)
 
-* [create](docs/sdks/tags/README.md#create) - Create a new tag
 * [list](docs/sdks/tags/README.md#list) - Retrieve a list of tags
-* [update](docs/sdks/tags/README.md#update) - Update a tag
+* [create](docs/sdks/tags/README.md#create) - Create a new tag
 * [delete](docs/sdks/tags/README.md#delete) - Delete a tag
+* [update](docs/sdks/tags/README.md#update) - Update a tag
 
 ### [track](docs/sdks/track/README.md)
 
@@ -164,9 +164,21 @@ run();
 <!-- Start Error Handling [errors] -->
 ## Error Handling
 
-All SDK methods return a response object or throw an error. If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+All SDK methods return a response object or throw an error. By default, an API error will throw a `errors.SDKError`.
 
-| Error Object               | Status Code                | Content Type               |
+If a HTTP request fails, an operation my also throw an error from the `models/errors/httpclienterrors.ts` module:
+
+| HTTP Client Error                                    | Description                                          |
+| ---------------------------------------------------- | ---------------------------------------------------- |
+| RequestAbortedError                                  | HTTP request was aborted by the client               |
+| RequestTimeoutError                                  | HTTP request timed out due to an AbortSignal signal  |
+| ConnectionError                                      | HTTP client was unable to make a request to a server |
+| InvalidRequestError                                  | Any input used to create a request is invalid        |
+| UnexpectedClientError                                | Unrecognised or unexpected error                     |
+
+In addition, when custom error responses are specified for an operation, the SDK may throw their associated Error type. You can refer to respective *Errors* tables in SDK docs for more details on possible error types for each operation. For example, the `list` method may throw the following errors:
+
+| Error Type                 | Status Code                | Content Type               |
 | -------------------------- | -------------------------- | -------------------------- |
 | errors.BadRequest          | 400                        | application/json           |
 | errors.Unauthorized        | 401                        | application/json           |
@@ -177,10 +189,7 @@ All SDK methods return a response object or throw an error. If Error objects are
 | errors.UnprocessableEntity | 422                        | application/json           |
 | errors.RateLimitExceeded   | 429                        | application/json           |
 | errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4xx-5xx                    | */*                        |
-
-Validation errors can also occur when either method arguments or data returned from the server do not match the expected format. The `SDKValidationError` that is thrown as a result will capture the raw value that failed validation in an attribute called `rawValue`. Additionally, a `pretty()` method is available on this error that can be used to log a nicely formatted string since validation errors can list many issues and the plain error string may be difficult read when debugging. 
-
+| errors.SDKError            | 4XX, 5XX                   | \*/\*                      |
 
 ```typescript
 import { Dub } from "dub";
@@ -204,10 +213,12 @@ const dub = new Dub({
 async function run() {
   let result;
   try {
-    result = await dub.links.create();
+    result = await dub.links.list();
 
-    // Handle the result
-    console.log(result);
+    for await (const page of result) {
+      // Handle the page
+      console.log(page);
+    }
   } catch (err) {
     switch (true) {
       case (err instanceof SDKValidationError): {
@@ -272,6 +283,8 @@ async function run() {
 run();
 
 ```
+
+Validation errors can also occur when either method arguments or data returned from the server do not match the expected format. The `SDKValidationError` that is thrown as a result will capture the raw value that failed validation in an attribute called `rawValue`. Additionally, a `pretty()` method is available on this error that can be used to log a nicely formatted string since validation errors can list many issues and the plain error string may be difficult read when debugging.
 <!-- End Error Handling [errors] -->
 
 <!-- Start Server Selection [server] -->
@@ -294,10 +307,12 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.create();
+  const result = await dub.links.list();
 
-  // Handle the result
-  console.log(result);
+  for await (const page of result) {
+    // Handle the page
+    console.log(page);
+  }
 }
 
 run();
@@ -318,10 +333,12 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.create();
+  const result = await dub.links.list();
 
-  // Handle the result
-  console.log(result);
+  for await (const page of result) {
+    // Handle the page
+    console.log(page);
+  }
 }
 
 run();
@@ -398,10 +415,12 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.create();
+  const result = await dub.links.list();
 
-  // Handle the result
-  console.log(result);
+  for await (const page of result) {
+    // Handle the page
+    console.log(page);
+  }
 }
 
 run();
@@ -423,7 +442,7 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.create({
+  const result = await dub.links.list({
     retries: {
       strategy: "backoff",
       backoff: {
@@ -436,8 +455,10 @@ async function run() {
     },
   });
 
-  // Handle the result
-  console.log(result);
+  for await (const page of result) {
+    // Handle the page
+    console.log(page);
+  }
 }
 
 run();
@@ -463,10 +484,12 @@ const dub = new Dub({
 });
 
 async function run() {
-  const result = await dub.links.create();
+  const result = await dub.links.list();
 
-  // Handle the result
-  console.log(result);
+  for await (const page of result) {
+    // Handle the page
+    console.log(page);
+  }
 }
 
 run();
