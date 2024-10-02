@@ -7,16 +7,16 @@ import { WebhookEventClick } from "dub/models/components";
 
 let value: WebhookEventClick = {
   id: "<id>",
-  url: "https://another-hepatitis.org/",
+  url: "https://questionable-outlaw.com",
   continent: "Antarctica",
-  country: "Central African Republic",
-  city: "Charlottesville",
-  device: "Desktop",
+  country: "Saint Barthelemy",
+  city: "Albertastad",
+  device: "Mobile",
   browser: "Safari",
-  os: "Linux",
-  referer: "energetic-grouper.net",
-  refererUrl: "https://angelic-collaboration.org",
-  ip: "cb00:fca3:aee0:a0f9:f866:a4dc:ff4f:10ef",
+  os: "BeOS",
+  referer: "moral-insolence.biz",
+  refererUrl: "https://steep-subexpression.biz",
+  ip: "178.233.234.135",
 };
 ```
 

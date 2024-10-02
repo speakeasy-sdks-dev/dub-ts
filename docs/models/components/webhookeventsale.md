@@ -6,8 +6,8 @@
 import { WebhookEventSale } from "dub/models/components";
 
 let value: WebhookEventSale = {
-  amount: 47.87,
-  currency: "Tugrik",
+  amount: 8952.97,
+  currency: "Bahraini Dinar",
   paymentProcessor: "<value>",
   invoiceId: "<id>",
 };
