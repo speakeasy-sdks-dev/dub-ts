@@ -26,7 +26,7 @@ const value: components.AnalyticsTimeseries[] = [
 ```typescript
 const value: components.AnalyticsCountries[] = [
   {
-    country: "NP",
+    country: "NR",
   },
 ];
 ```
@@ -36,8 +36,8 @@ const value: components.AnalyticsCountries[] = [
 ```typescript
 const value: components.AnalyticsCities[] = [
   {
-    city: "Jamarfield",
-    country: "TK",
+    city: "South Wilbertside",
+    country: "GD",
   },
 ];
 ```
@@ -67,7 +67,7 @@ const value: components.AnalyticsBrowsers[] = [
 ```typescript
 const value: components.AnalyticsOS[] = [
   {
-    os: "WebOS",
+    os: "Symbian",
   },
 ];
 ```
@@ -77,7 +77,7 @@ const value: components.AnalyticsOS[] = [
 ```typescript
 const value: components.AnalyticsReferers[] = [
   {
-    referer: "all-government.info",
+    referer: "waterlogged-sediment.name",
   },
 ];
 ```
@@ -89,10 +89,10 @@ const value: components.AnalyticsTopLinks[] = [
   {
     link: "<value>",
     id: "<id>",
-    domain: "meaty-disconnection.info",
+    domain: "turbulent-embossing.org",
     key: "<key>",
     shortLink: "<value>",
-    url: "https://firm-silk.com",
+    url: "https://afraid-folklore.com",
     createdAt: "<value>",
   },
 ];
@@ -103,7 +103,7 @@ const value: components.AnalyticsTopLinks[] = [
 ```typescript
 const value: components.AnalyticsTopUrls[] = [
   {
-    url: "https://valuable-instruction.com/",
+    url: "https://livid-king.name",
   },
 ];
 ```

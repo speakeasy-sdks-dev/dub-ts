@@ -7,16 +7,16 @@ import { SaleCreatedEventClick } from "dub/models/components";
 
 let value: SaleCreatedEventClick = {
   id: "<id>",
-  url: "https://lucky-sweatshop.com",
-  continent: "North America",
-  country: "Cameroon",
-  city: "Fountain Valley",
-  device: "Mobile",
+  url: "https://fortunate-tomography.net/",
+  continent: "Europe",
+  country: "Honduras",
+  city: "West Jaydenview",
+  device: "Desktop",
   browser: "Chrome",
-  os: "WebOS",
-  referer: "earnest-tomb.name",
-  refererUrl: "https://faraway-commercial.net/",
-  ip: "70.243.205.150",
+  os: "Windows Phone",
+  referer: "knowledgeable-adviser.org",
+  refererUrl: "https://deafening-restaurant.info/",
+  ip: "0904:4f6c:9ce0:2014:ba58:c1c2:f9e3:f11c",
 };
 ```
 
