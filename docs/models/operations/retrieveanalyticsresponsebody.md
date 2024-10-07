@@ -26,7 +26,7 @@ const value: components.AnalyticsTimeseries[] = [
 ```typescript
 const value: components.AnalyticsContinents[] = [
   {
-    continent: "OC",
+    continent: "AF",
   },
 ];
 ```
@@ -36,7 +36,7 @@ const value: components.AnalyticsContinents[] = [
 ```typescript
 const value: components.AnalyticsCountries[] = [
   {
-    country: "AS",
+    country: "LI",
   },
 ];
 ```
@@ -46,8 +46,8 @@ const value: components.AnalyticsCountries[] = [
 ```typescript
 const value: components.AnalyticsCities[] = [
   {
-    city: "Fort Janickton",
-    country: "NE",
+    city: "Surprise",
+    country: "GD",
   },
 ];
 ```
@@ -57,7 +57,7 @@ const value: components.AnalyticsCities[] = [
 ```typescript
 const value: components.AnalyticsDevices[] = [
   {
-    device: "Desktop",
+    device: "Mobile",
   },
 ];
 ```
@@ -77,7 +77,7 @@ const value: components.AnalyticsBrowsers[] = [
 ```typescript
 const value: components.AnalyticsOS[] = [
   {
-    os: "Android",
+    os: "Symbian",
   },
 ];
 ```
@@ -97,7 +97,7 @@ const value: components.AnalyticsTriggers[] = [
 ```typescript
 const value: components.AnalyticsReferers[] = [
   {
-    referer: "powerless-synergy.info",
+    referer: "steep-outlaw.org",
   },
 ];
 ```
@@ -107,7 +107,7 @@ const value: components.AnalyticsReferers[] = [
 ```typescript
 const value: components.AnalyticsRefererUrls[] = [
   {
-    refererUrl: "https://circular-heartbeat.biz/",
+    refererUrl: "https://thick-ocelot.com/",
   },
 ];
 ```
@@ -119,10 +119,10 @@ const value: components.AnalyticsTopLinks[] = [
   {
     link: "<value>",
     id: "<id>",
-    domain: "useless-custody.info",
+    domain: "grumpy-chops.org",
     key: "<key>",
     shortLink: "<value>",
-    url: "https://gracious-phrase.name",
+    url: "https://mammoth-paintwork.info/",
     createdAt: "<value>",
   },
 ];
@@ -133,7 +133,7 @@ const value: components.AnalyticsTopLinks[] = [
 ```typescript
 const value: components.AnalyticsTopUrls[] = [
   {
-    url: "https://swift-newsletter.info",
+    url: "https://super-cop-out.name/",
   },
 ];
 ```

@@ -8,8 +8,8 @@ import { LeadCreatedEventCustomer } from "dub/models/components";
 let value: LeadCreatedEventCustomer = {
   id: "<id>",
   name: "<value>",
-  email: "Eveline_Stanton-Ullrich29@hotmail.com",
-  avatar: "https://picsum.photos/seed/xrcyhx/2111/2686",
+  email: "Kaci.Rodriguez16@gmail.com",
+  avatar: "https://picsum.photos/seed/ioS71dw/61/3111",
 };
 ```
 
