@@ -7,16 +7,16 @@ import { SaleCreatedEventClick } from "dub/models/components";
 
 let value: SaleCreatedEventClick = {
   id: "<id>",
-  url: "https://beloved-unibody.info",
-  continent: "Antarctica",
-  country: "Turks and Caicos Islands",
-  city: "Johnstonstead",
+  url: "https://fortunate-tomography.net/",
+  continent: "Europe",
+  country: "Honduras",
+  city: "West Jaydenview",
   device: "Desktop",
-  browser: "Firefox",
-  os: "iOS",
-  referer: "slimy-hose.net",
-  refererUrl: "https://idolized-hunt.name",
-  ip: "49.216.194.19",
+  browser: "Chrome",
+  os: "Windows Phone",
+  referer: "knowledgeable-adviser.org",
+  refererUrl: "https://deafening-restaurant.info/",
+  ip: "0904:4f6c:9ce0:2014:ba58:c1c2:f9e3:f11c",
 };
 ```
 

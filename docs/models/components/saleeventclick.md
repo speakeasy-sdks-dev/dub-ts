@@ -7,16 +7,16 @@ import { SaleEventClick } from "dub/models/components";
 
 let value: SaleEventClick = {
   id: "<id>",
-  url: "https://judicious-tectonics.biz",
+  url: "https://fuzzy-cassava.info",
   continent: "Australia",
-  country: "Liechtenstein",
-  city: "Lake Rickton",
+  country: "Tuvalu",
+  city: "North Augustaside",
   device: "Desktop",
   browser: "Chrome",
-  os: "Symbian",
-  referer: "raw-viability.name",
-  refererUrl: "https://hospitable-forager.info",
-  ip: "7df0:4205:9c4a:eebc:fc14:8da9:fb6f:edca",
+  os: "Windows Phone",
+  referer: "mysterious-council.name",
+  refererUrl: "https://every-larva.biz/",
+  ip: "225.39.71.98",
 };
 ```
 
