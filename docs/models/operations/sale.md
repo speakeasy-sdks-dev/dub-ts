@@ -6,8 +6,8 @@
 import { Sale } from "dub/models/operations";
 
 let value: Sale = {
-  amount: 289.47,
-  currency: "Argentine Peso",
+  amount: 6530.00,
+  currency: "Lempira",
   paymentProcessor: "<value>",
   invoiceId: "<id>",
   metadata: {
