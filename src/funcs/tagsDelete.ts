@@ -83,12 +83,13 @@ export async function tagsDelete(
 
   const secConfig = await extractSecurity(client._options.token);
   const securityInput = secConfig == null ? {} : { token: secConfig };
+  const requestSecurity = resolveGlobalSecurity(securityInput);
   const context = {
     operationID: "deleteTag",
     oAuth2Scopes: [],
-    securitySource: client._options.token,
+    securitySource: secConfig,
+    resolvedSecurity: requestSecurity,
   };
-  const requestSecurity = resolveGlobalSecurity(securityInput);
 
   const requestRes = client._createRequest(context, {
     security: requestSecurity,
