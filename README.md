@@ -195,18 +195,18 @@ If a HTTP request fails, an operation my also throw an error from the `models/er
 
 In addition, when custom error responses are specified for an operation, the SDK may throw their associated Error type. You can refer to respective *Errors* tables in SDK docs for more details on possible error types for each operation. For example, the `list` method may throw the following errors:
 
-| Error Type                 | Status Code                | Content Type               |
-| -------------------------- | -------------------------- | -------------------------- |
-| errors.BadRequest          | 400                        | application/json           |
-| errors.Unauthorized        | 401                        | application/json           |
-| errors.Forbidden           | 403                        | application/json           |
-| errors.NotFound            | 404                        | application/json           |
-| errors.Conflict            | 409                        | application/json           |
-| errors.InviteExpired       | 410                        | application/json           |
-| errors.UnprocessableEntity | 422                        | application/json           |
-| errors.RateLimitExceeded   | 429                        | application/json           |
-| errors.InternalServerError | 500                        | application/json           |
-| errors.SDKError            | 4XX, 5XX                   | \*/\*                      |
+| Error Type                 | Status Code | Content Type     |
+| -------------------------- | ----------- | ---------------- |
+| errors.BadRequest          | 400         | application/json |
+| errors.Unauthorized        | 401         | application/json |
+| errors.Forbidden           | 403         | application/json |
+| errors.NotFound            | 404         | application/json |
+| errors.Conflict            | 409         | application/json |
+| errors.InviteExpired       | 410         | application/json |
+| errors.UnprocessableEntity | 422         | application/json |
+| errors.RateLimitExceeded   | 429         | application/json |
+| errors.InternalServerError | 500         | application/json |
+| errors.SDKError            | 4XX, 5XX    | \*/\*            |
 
 ```typescript
 import { Dub } from "dub";
@@ -419,9 +419,9 @@ const sdk = new Dub({ httpClient });
 
 This SDK supports the following security scheme globally:
 
-| Name        | Type        | Scheme      |
-| ----------- | ----------- | ----------- |
-| `token`     | http        | HTTP Bearer |
+| Name    | Type | Scheme      |
+| ------- | ---- | ----------- |
+| `token` | http | HTTP Bearer |
 
 To authenticate with the API the `token` parameter must be set when initializing the SDK client instance. For example:
 ```typescript
